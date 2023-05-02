@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+
+    <title>Mario Jump - Game</title>
+  </head>
+  <body>
+    <div class="game-board">
+      <div class="restart-board">
+        <button onclick="restartGame()">
+          <img src="./assets/images/800px-Mushroom.png" class="btn-mushroom" />
+          Reiniciar
+        </button>
+      </div>
+      <div class="start-board">
+        <button onclick="startGame()">
+          <img src="./assets/images/star.png" class="btn-star" />
+          Iniciar
+        </button>
+      </div>
+      <div class="count-to-start">
+        <span class="count">5</span>
+      </div>
+      <p class="score-wrap">Score: <span id="score">0</span></p>
+      <img src="./assets/images/clouds.png" class="clouds" />
+      <img src="./assets/images/pipe.png" class="pipe" />
+      <img src="./assets/images/mario.gif" class="mario" />
+      <div class="grass"></div>
+    </div>
+  </body>
+</html>
